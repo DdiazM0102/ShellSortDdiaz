@@ -16,7 +16,7 @@ public class ShellSort {
         int n = arr.length;
         
         int intervalo = 1;
-        while (intervalo < n / 3) {
+        while (intervalo < n / 2) {
             intervalo = 3 * intervalo + 1;
         }
 
@@ -26,7 +26,7 @@ public class ShellSort {
                     exch(arr, j, j - intervalo);
                 }
             }
-            intervalo /= 3;
+            intervalo /= 2;
         }
     }
 
